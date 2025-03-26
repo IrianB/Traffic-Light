@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(20, 20, 20);
+    text-align: center;
+}
+
+h1{
+    color: white;
+}
+
+#box{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: auto;
+    border: 5px solid rgb(75, 74, 74);
+    background: radial-gradient(#444, #111);
+}
+
+.btn{
+    margin: 10px;
+    width: 100px;
+    padding: 10px 0;
+    background-color: #7a7979;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    font-weight: 600; 
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.buttons{
+    margin-top: 10px;
+}
+
+/* hover */
+.btn:hover{
+    background-color: #b6b4b4;
+}
+
+#stop:hover{
+    color:red;
+}
+
+#slow:hover{
+    color:rgb(244, 248, 7);
+}
+
+#go:hover{
+    color:rgb(6, 255, 18);
+}
+
+#off:hover{
+    color:rgb(255, 253, 253);
+}
