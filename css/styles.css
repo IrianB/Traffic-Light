@@ -20,7 +20,7 @@ h1{
     background: radial-gradient(#444, #111);
 }
 
-.btn{
+.btn, #active{
     margin: 10px;
     width: 100px;
     padding: 10px 0;
@@ -30,6 +30,23 @@ h1{
     font-weight: 600; 
     font-size: 20px;
     cursor: pointer;
+}
+
+#not-active{
+    margin: 10px;
+    width: 200px;
+    padding: 10px 0;
+    background-color: #7a7979;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    font-weight: 600; 
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn[disabled]{
+    opacity:  0.35;
+    cursor: not-allowed;
 }
 
 .buttons{
@@ -55,4 +72,13 @@ h1{
 
 #off:hover{
     color:rgb(255, 253, 253);
+}
+
+#active:hover{
+    background-color: rgb(63, 248, 248);
+}
+
+#not-active:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
 }

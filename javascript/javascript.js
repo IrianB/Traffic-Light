@@ -1,5 +1,15 @@
-const btn = document.querySelectorAll("button");
+const btn = document.querySelectorAll(".buttons button");
 const box = document.getElementById("box");
+const active = document.getElementById("active");
+const notActive = document.getElementById("not-active");
+
+active.addEventListener("click", () =>{
+    btn.forEach(btn => btn.disabled = false);
+});
+
+notActive.addEventListener("click", () =>{
+    btn.forEach(btn => btn.disabled = true);
+});
 
 btn[0].addEventListener("click",red);
 btn[1].addEventListener("click",yellow);
